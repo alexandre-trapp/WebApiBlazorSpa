@@ -18,7 +18,7 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpGet]
-    public IEnumerable<WeatherForecast> Get()
+    public WeatherForecast[] Get()
     {
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
